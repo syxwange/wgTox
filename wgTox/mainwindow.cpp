@@ -8,12 +8,7 @@ MainWindow::MainWindow(QWidget *parent)	: QMainWindow(parent)
 {
 	ui.setupUi(this);
 
-	auto test = new TestClass(qApp);	
 
-	QThread* p = new QThread;
-	p->start();
-	//moveToThread(p);
-	test->moveToThread(p);
 }
 
 void MainWindow::testFunc()
