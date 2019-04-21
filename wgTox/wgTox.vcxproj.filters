@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
       <Extensions>qrc;*</Extensions>
@@ -28,34 +24,763 @@
       <Extensions>moc;h;cpp</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Source Files\widget">
+      <UniqueIdentifier>{31bea0a8-373c-4617-916a-4f84d0edb2a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\persistence">
+      <UniqueIdentifier>{4b31051c-48fd-4b6f-883f-6614bf817d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{113d8665-bd23-4dd9-a3e1-7aa057b36691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\model">
+      <UniqueIdentifier>{3efe31b3-149b-4dce-85fa-4d0b8930dcec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net">
+      <UniqueIdentifier>{d0eaef4b-e5d0-44a4-b130-d0763b566d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{96e5a9fa-9ee2-41db-95a4-c09c86ac9bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\video">
+      <UniqueIdentifier>{c00727ec-ec93-4190-9319-5cefaf06c8e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mainwindow.cpp">
+    <ClCompile Include="nexus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="testclass.cpp">
+    <ClCompile Include="persistence\profile.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\profilelocker.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\serialize.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\settings.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\settingsserializer.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\smileypack.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="core\corefile.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\dhtserver.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\toxcall.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\toxencrypt.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\toxfile.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\toxid.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\toxoptions.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\toxpk.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\toxstring.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\core.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\coreav.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="model\friend.cpp">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\group.cpp">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\contact.cpp">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\friendlist.cpp">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\grouplist.cpp">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\groupinvite.cpp">
+      <Filter>Source Files\model</Filter>
+    </ClCompile>
+    <ClCompile Include="net\bootstrapnodeupdater.cpp">
+      <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\history.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="persistence\rawdatabase.cpp">
+      <Filter>Source Files\persistence</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="net\avatarbroadcaster.cpp">
+      <Filter>Source Files\net</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="mainwindow.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="testclass.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
+    <None Include="..\res\nodes.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\audio\notification.s16le.pcm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\audio\ToxIncomingCall.s16le.pcm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\audio\ToxOutgoingCall.s16le.pcm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\audio\ToxEndCall.s16le.pcm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\add.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\avatar_mask.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\contact.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\contact_dark.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\group.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\group_dark.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\icons\qtox.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\settings.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\away.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\away_notification.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\busy.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\busy_notification.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\groupchat.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\groupchat_newmessages.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\groupchat_notification.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\offline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\offline_notification.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\online.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\status\online_notification.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\dark\taskbar_online.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\dark\taskbar_away.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\dark\taskbar_busy.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\dark\taskbar_offline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\dark\taskbar_event.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\light\taskbar_online.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\light\taskbar_away.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\light\taskbar_busy.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\light\taskbar_offline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\taskbar\light\taskbar_event.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\transfer.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\palette.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferWidget\fileDone.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\centralWidget\centralWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\chatArea.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\chatHead.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\innerStyle.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\scrollBarUpArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\scrollBarDownArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\scrollBarLeftArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\scrollBarRightArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\buttons.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\fullScreenButtons.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\callButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\labels.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\micButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\micButtonRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\videoButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\videoButtonRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\volButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\volButtonRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\videoPreview.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\videoPreviewRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\emoteButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\fileButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\screenshotButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\searchCalendarButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\searchDownButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\searchHideButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\searchSettingsButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\searchUpButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\sendButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatForm\exitFullScreenButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\emoticonWidget\dot_page.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\emoticonWidget\dot_page_current.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\emoticonWidget\dot_page_hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\emoticonWidget\emoticonWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferWidget\fileTransferWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\friendList\friendList.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\msgEdit\msgEdit.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\settings\mainContent.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\settings\mainHead.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\statusButton\statusButton.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\statusButton\menu_indicator.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\window\general.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\window\profile.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\window\statusPanel.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\window\window.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\info.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\spinner.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\typing.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\chatArea\error.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferInstance\no.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferInstance\pause.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferInstance\yes.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferInstance\dir.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferInstance\arrow_white.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferInstance\browse.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\fileTransferInstance\filetransferWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\genericChatForm\genericChatForm.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\acceptCall\acceptCall.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\rejectCall\rejectCall.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\notificationEdge\notificationEdge.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\loginScreen\loginScreen.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\contentDialog\contentDialog.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\dark\tooliconsZone\tooliconsZone.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\palette.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferWidget\fileDone.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\centralWidget\centralWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\chatArea.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\chatHead.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\innerStyle.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\scrollBarUpArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\scrollBarDownArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\scrollBarLeftArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\scrollBarRightArrow.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\buttons.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\fullScreenButtons.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\callButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\labels.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\micButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\micButtonRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\videoButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\videoButtonRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\volButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\volButtonRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\videoPreview.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\videoPreviewRed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\emoteButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\fileButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\screenshotButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\searchCalendarButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\searchDownButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\searchHideButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\searchSettingsButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\searchUpButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\sendButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatForm\exitFullScreenButton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\emoticonWidget\dot_page.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\emoticonWidget\dot_page_current.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\emoticonWidget\dot_page_hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\emoticonWidget\emoticonWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferWidget\fileTransferWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\friendList\friendList.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\msgEdit\msgEdit.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\settings\mainContent.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\settings\mainHead.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\statusButton\statusButton.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\statusButton\menu_indicator.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\window\general.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\window\profile.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\window\statusPanel.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\window\window.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\info.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\spinner.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\typing.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\chatArea\error.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferInstance\no.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferInstance\pause.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferInstance\yes.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferInstance\dir.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferInstance\arrow_white.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferInstance\browse.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\fileTransferInstance\filetransferWidget.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\genericChatForm\genericChatForm.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\acceptCall\acceptCall.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\rejectCall\rejectCall.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\login_logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\notificationEdge\notificationEdge.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\loginScreen\loginScreen.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\others\logout-icon.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\img\caps_lock.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\contentDialog\contentDialog.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\themes\default\tooliconsZone\tooliconsZone.css">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="mainwindow.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
+    <Font Include="..\res\font\DejaVuSans.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="mainwindow.qrc">
+    <Image Include="..\img\settings\av.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\img\settings\general.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\img\settings\identity.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\img\settings\privacy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="..\res.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="nexus.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="persistence\profile.h">
+      <Filter>Source Files\persistence</Filter>
+    </QtMoc>
+    <QtMoc Include="persistence\settings.h">
+      <Filter>Source Files\persistence</Filter>
+    </QtMoc>
+    <QtMoc Include="persistence\smileypack.h">
+      <Filter>Source Files\persistence</Filter>
+    </QtMoc>
+    <QtMoc Include="core\core.h">
+      <Filter>Source Files\core</Filter>
+    </QtMoc>
+    <QtMoc Include="core\coreav.h">
+      <Filter>Source Files\core</Filter>
+    </QtMoc>
+    <QtMoc Include="model\friend.h">
+      <Filter>Source Files\model</Filter>
+    </QtMoc>
+    <QtMoc Include="model\group.h">
+      <Filter>Source Files\model</Filter>
+    </QtMoc>
+    <QtMoc Include="model\contact.h">
+      <Filter>Source Files\model</Filter>
+    </QtMoc>
+    <QtMoc Include="net\bootstrapnodeupdater.h">
+      <Filter>Source Files\net</Filter>
+    </QtMoc>
+    <QtMoc Include="persistence\history.h">
+      <Filter>Source Files\persistence</Filter>
+    </QtMoc>
+    <QtMoc Include="persistence\rawdatabase.h">
+      <Filter>Source Files\persistence</Filter>
+    </QtMoc>
+    <QtMoc Include="ipc.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="persistence\profilelocker.h">
+      <Filter>Source Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\serialize.h">
+      <Filter>Source Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\settingsserializer.h">
+      <Filter>Source Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="core\corefile.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\dhtserver.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\icoresettings.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxcall.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxencrypt.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxfile.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxfilepause.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxid.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxoptions.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxpk.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\toxstring.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="model\interface.h">
+      <Filter>Source Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="core\strongtype.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="model\friendlist.h">
+      <Filter>Source Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\grouplist.h">
+      <Filter>Source Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\groupinvite.h">
+      <Filter>Source Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="audio\iaudiosettings.h">
+      <Filter>Source Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="video\ivideosettings.h">
+      <Filter>Source Files\video</Filter>
+    </ClInclude>
+    <ClInclude Include="persistence\ifriendsettings.h">
+      <Filter>Source Files\persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="net\avatarbroadcaster.h">
+      <Filter>Source Files\net</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\searchtypes.h">
+      <Filter>Source Files\widget</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

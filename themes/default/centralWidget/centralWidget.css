@@ -1,0 +1,24 @@
+QLabel
+{
+    color: @mainText;
+}
+
+QLineEdit
+{
+    color: @mainText;
+}
+
+QTextEdit
+{
+    color: @mainText;
+}
+
+QSpinBox, QDoubleSpinBox
+{
+    color: @mainText;
+} 
+
+QListView
+{
+    color: @mainText;
+}

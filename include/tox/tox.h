@@ -1,10 +1,10 @@
-/* tox.h
+﻿/* tox.h
  *
  * The Tox public API.
  *
  *  Copyright (C) 2013 Tox project All Rights Reserved.
  *
- *  This file is part of Tox.
+ *  This file is part of Tox.///
  *
  *  Tox is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
