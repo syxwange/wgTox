@@ -69,6 +69,8 @@
  * deadlock.
  */
 
+#pragma comment(lib,"libtoxav.lib")
+
 /**
  * @brief Maps friend IDs to ToxFriendCall.
  * @note Need to use STL container here, because Qt containers need a copy constructor.

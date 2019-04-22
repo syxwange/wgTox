@@ -50,6 +50,7 @@
  * @brief True if the profile has been removed by remove().
  */
 
+#pragma comment(lib,"libsodium.lib")
 QStringList Profile::profiles;
 
 void Profile::initCore(const QByteArray& toxsave, ICoreSettings& s, bool isNewProfile)

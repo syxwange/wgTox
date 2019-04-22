@@ -40,6 +40,8 @@
 #include <cassert>
 #include <memory>
 
+#pragma comment(lib,"libtoxcore.lib")
+
 const QString Core::TOX_EXT = ".tox";
 
 #define MAX_GROUP_MESSAGE_LEN 1024

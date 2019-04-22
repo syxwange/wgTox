@@ -28,7 +28,7 @@
 #include <QMetaObject>
 #include <QMutexLocker>
 
-
+#pragma comment(lib,"sqlite3.lib")
 /**
  * @class RawDatabase
  * @brief Implements a low level RAII interface to a SQLCipher (SQlite3) database.

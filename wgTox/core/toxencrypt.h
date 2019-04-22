@@ -25,7 +25,7 @@
 
 #include <memory>
 
-struct Tox_Pass_Key;
+#include <tox/toxencryptsave.h>
 
 class ToxEncrypt
 {
@@ -46,10 +46,10 @@ public:
     QByteArray decrypt(const QByteArray& ciphertext) const;
 
 private:
-    explicit ToxEncrypt(Tox_Pass_Key* key);
+    explicit ToxEncrypt(TOX_PASS_KEY* key);
 
 private:
-    Tox_Pass_Key* passKey = nullptr;
+    TOX_PASS_KEY* passKey = nullptr;
 };
 
 #endif // TOXENCRYPT_H
