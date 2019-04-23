@@ -45,6 +45,12 @@
     <Filter Include="Source Files\video">
       <UniqueIdentifier>{c00727ec-ec93-4190-9319-5cefaf06c8e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\widget\tool">
+      <UniqueIdentifier>{22ae5e5c-9a90-4702-8d52-06f1f549c2f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\widget\form">
+      <UniqueIdentifier>{15916b0e-769f-4d29-81a7-d78720120cc4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -136,6 +142,51 @@
     </ClCompile>
     <ClCompile Include="net\avatarbroadcaster.cpp">
       <Filter>Source Files\net</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\loginscreen.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\translator.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\style.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\gui.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\widget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\genericchatitemwidget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\tool\croppinglabel.cpp">
+      <Filter>Source Files\widget\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\tool\adjustingscrollarea.cpp">
+      <Filter>Source Files\widget\tool</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\passwordedit.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\form\setpassworddialog.cpp">
+      <Filter>Source Files\widget\form</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\notificationscrollarea.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\notificationedgewidget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\genericchatroomwidget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\maskablepixmapwidget.cpp">
+      <Filter>Source Files\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\tool\profileimporter.cpp">
+      <Filter>Source Files\widget\tool</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -708,6 +759,42 @@
     <QtMoc Include="ipc.h">
       <Filter>Source Files</Filter>
     </QtMoc>
+    <QtMoc Include="widget\loginscreen.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\gui.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\widget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\genericchatitemwidget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\tool\croppinglabel.h">
+      <Filter>Source Files\widget\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\tool\adjustingscrollarea.h">
+      <Filter>Source Files\widget\tool</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\passwordedit.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\form\setpassworddialog.h">
+      <Filter>Source Files\widget\form</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\notificationedgewidget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\genericchatroomwidget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\maskablepixmapwidget.h">
+      <Filter>Source Files\widget</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\tool\profileimporter.h">
+      <Filter>Source Files\widget\tool</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="persistence\profilelocker.h">
@@ -782,5 +869,25 @@
     <ClInclude Include="widget\searchtypes.h">
       <Filter>Source Files\widget</Filter>
     </ClInclude>
+    <ClInclude Include="widget\translator.h">
+      <Filter>Source Files\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\style.h">
+      <Filter>Source Files\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\notificationscrollarea.h">
+      <Filter>Source Files\widget</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="widget\loginscreen.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="widget\mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="widget\form\setpassworddialog.ui">
+      <Filter>Source Files\widget\form</Filter>
+    </QtUic>
   </ItemGroup>
 </Project>
